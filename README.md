@@ -1,2 +1,2 @@
-# Camila - C / C++
-Arquivos e códigos dos meus alunos de aulas particulares <br>
+# Camila 
+Linguagens: C / C++ <br>
