@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br">
+<head>
+
+</head>
+<body>
+    <p class="teste" style="color:blue">p1</p>
+    <p class="teste">p2</p>
+    <script>
+        //Mostra o array com 2 index (0 e 1)
+        console.log(document.getElementsByClassName("teste")) 
+        //Chama e mostra a primeira COLOR do ELEMENTO <p>
+        console.log(document.getElementsByClassName("teste")[0].style.color) 
+        //Altera a PROPERTY color do CSS
+        document.getElementsByClassName("teste")[0].style.color = "red";
+        //Chama e mostra a nova COLOR do ELEMENTO <p>
+        console.log(document.getElementsByClassName("teste")[0].style.color)       
+    </script>
+</body>
+</html>

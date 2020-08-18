@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br">
+<head>
+
+</head>
+<body>
+    <p id="teste1" title="Teste 1 p1">p1</p>
+    <p id="teste2">p2</p>
+    <script>
+        //Chama e mostra o TITLE do primeiro <p>
+        console.log(document.getElementById("teste1").title) 
+        //Altera o ATTRIBUTE title da tag <p>
+        document.getElementById("teste1").title="Teste 1 p1 alterado";
+        //Chama e mostra o novo TITLE do primeiro <p>
+        console.log(document.getElementById("teste1").title) 
+    </script>
+</body>
+</html>

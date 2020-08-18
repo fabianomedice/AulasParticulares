@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br">
+<head>
+
+</head>
+<body>
+    <p>p1 <span> teste </span> <br></p>
+    <p>p2 <br>1 <p><br>2</p> <br>3</p>
+    <script>        
+        //Mostra o array com 4 index (0, 1, 2, 3)
+        //Isto se deve ao segundo ter mais 3 divisões
+        console.log(document.getElementsByTagName("p")) 
+        //Chama e mostra o texto do primeiro <p>
+        console.log(document.getElementsByTagName("p")[0].innerHTML) 
+        //Chama e mostra o texto do segundo <p>
+        console.log(document.getElementsByTagName("p")[1].innerHTML) 
+        //Chama e mostra o texto do terceiro <p>
+        console.log(document.getElementsByTagName("p")[2].innerHTML)
+        //Chama e mostra o texto do quarto <p>
+        //Importante reparar que o <br>3 não se encontra aqui  
+        console.log(document.getElementsByTagName("p")[3].innerHTML)
+        //Altera o texto do primeiro <p>
+        document.getElementsByTagName("p")[0].innerHTML = "p novo alterado <br>"
+        //Chama e mostra o novo texto do primeiro <p>
+        console.log(document.getElementsByTagName("p")[0].innerHTML) 
+    </script>
+</body>
+</html>

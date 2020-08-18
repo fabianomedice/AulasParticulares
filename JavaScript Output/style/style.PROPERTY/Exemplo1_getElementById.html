@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br">
+<head>
+
+</head>
+<body>
+    <p id="teste1" style="color:blue">p1</p>
+    <p id="teste2">p2</p>
+    <script>
+        //Chama e mostra a primeira COLOR do ELEMENTO <p>
+        console.log(document.getElementById("teste1").style.color) 
+        //Altera a PROPERTY color do CSS
+        document.getElementById("teste1").style.color = "red";
+        //Chama e mostra a nova COLOR do ELEMENTO <p>
+        console.log(document.getElementById("teste1").style.color) 
+    </script>
+</body>
+</html>

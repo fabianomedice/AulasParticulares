@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br">
+<head>
+
+</head>
+<body>
+    <p id="teste1">p1 <span> teste </span> <br></p>
+    <p id="teste2">p2 <br>1 <p><br>2</p> <br>3</p>
+    <script>
+        //Chama e mostra o texto do primeiro <p>
+        console.log(document.getElementById("teste1").innerHTML) 
+        //Chama e mostra o texto do segundo <p>
+        console.log(document.getElementById("teste2").innerHTML) 
+        //Altera o texto do primeiro <p>
+        document.getElementById("teste1").innerHTML = "p novo alterado <br>"
+        //Chama e mostra o novo texto do primeiro <p>
+        console.log(document.getElementById("teste1").innerHTML) 
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br">
+<head>
+
+</head>
+<body>
+    <p title="Teste 1 p1">p1</p>
+    <p>p2</p>
+    <script>
+        //Mostra o array com 2 index (0 e 1)
+        console.log(document.getElementsByTagName("p")) 
+        //Chama e mostra o TITLE do primeiro <p>
+        console.log(document.getElementsByTagName("p")[0].title) 
+        //Altera o ATTRIBUTE title da tag <p>
+        document.getElementsByTagName("p")[0].title="Teste 1 p1 alterado"
+        //Chama e mostra o novo TITLE do primeiro <p>
+        console.log(document.getElementsByTagName("p")[0].title) 
+    </script>
+</body>
+</html>
