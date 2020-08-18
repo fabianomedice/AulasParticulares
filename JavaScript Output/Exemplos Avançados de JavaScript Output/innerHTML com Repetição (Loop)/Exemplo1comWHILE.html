@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br">
+<head>
+
+</head>
+<body>
+    <div id="teste1">div1</div>
+    <div id="teste2">div2</div>    
+    <script>
+        //Chama e mostra o primeiro <div>
+        console.log(document.getElementById("teste1").innerHTML) 
+        //Chama e mostra o segundo <div>
+        console.log(document.getElementById("teste2").innerHTML)
+        //Altera o texto do primeiro <div>
+        document.getElementById("teste1").innerHTML= "Alterei o texto";        
+        /*Como funciona o WHILE? Ele é dividido em uma parte
+        Ela necessita apenas da condição de parar, o que seria
+        a 2ª do FOR. Porém a estrutura tem que possuir as mesmas
+        coisas
+        Elas são divididas por ;
+        1ª - Valor inicial da variável de controle
+        2ª - condição para parar
+        3ª - incremento ou decremento a cada repetição*/
+        repeticao=1
+        /*1ª - A variável de controle é "repeticao"
+        Ela tem que existir antes do WHILE.
+        Como não existe, criamos ela aqui
+        O importante é lembrar que ela poderia estar em
+        QUALQUER lugar do programa para atender uma condição*/
+        while(repeticao<4)
+        //2ª - A condição dela parar é que ao chegar a 4ª repetição
+        {
+            /*Como o + serve para concatenar, eu juntei um monte de string
+            Assim eles ainda são strings, mas tem a formatação de HTML
+            Isto auxilia para ver se o texto está correto como HTML*/
+            document.getElementById("teste1").innerHTML=
+            //Chamando primeiro o arquivo anterior e adicionando um novo conteúdo
+            document.getElementById("teste1").innerHTML + 
+            "<div>"+
+                /*Adicionado o valor da variável junto com escrito
+                Isto permite customizar por repetição sem ter
+                que escrever uma a uma*/
+                "Criado uma nova div"+
+            "</div>";
+            /*3ª - "repeticao++" é igual "repeticao=repeticao+1"
+            ou seja, um incremento a cada repetição*/
+            repeticao++;
+        }
+        document.getElementById("teste1").innerHTML=
+        //Chamando primeiro o arquivo anterior e adicionando um novo conteúdo
+        document.getElementById("teste1").innerHTML +
+        "Adicionei novos elementos de HTML";
+        //Chama e mostra o primeiro <div>
+        console.log(document.getElementById("teste1").innerHTML)
+    </script>
+</body>
+</html>

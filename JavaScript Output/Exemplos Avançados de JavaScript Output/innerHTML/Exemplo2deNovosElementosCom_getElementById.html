@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br">
+<head>
+
+</head>
+<body>
+    <div id="teste1">div1</div>
+    <div id="teste2">div2</div>    
+    <script>
+        //Chama e mostra o primeiro <div>
+        console.log(document.getElementById("teste1").innerHTML) 
+        //Chama e mostra o segundo <div>
+        console.log(document.getElementById("teste2").innerHTML)
+        //Altera o texto do primeiro <div>
+        /*Como o + serve para concatenar, eu juntei um monte de string
+        Assim eles ainda são strings, mas tem a formatação de HTML
+        Isto auxilia para ver se o texto está correto como HTML*/
+        document.getElementById("teste1").innerHTML=
+        "Alterei o texto"+
+        "<div>"+
+            "Criado uma nova div"+
+        "</div>" +
+        "Adicionei novos elementos de HTML";
+        //Chama e mostra o primeiro <div>
+        console.log(document.getElementById("teste1").innerHTML)
+        //Altera o texto do segundo <div>
+        /*Como chamo ele e coloco um + depois, mantenho o texto 
+        original e adiciono o novo texto*/
+        document.getElementById("teste2").innerHTML= document.getElementById("teste2").innerHTML +"<button>Teste</button>"
+        //Chama e mostra o segundo <div>
+        console.log(document.getElementById("teste2").innerHTML)
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br">
+<head>
+
+</head>
+<body>
+    <div id="teste1">div1</div>
+    <div id="teste2">div2</div>    
+    <script>
+        //Chama e mostra o primeiro <div>
+        console.log(document.getElementById("teste1").innerHTML) 
+        //Chama e mostra o segundo <div>
+        console.log(document.getElementById("teste2").innerHTML)
+        //Altera o texto do primeiro <div>
+        document.getElementById("teste1").innerHTML="Alterei o texto <div>Criado uma nova div</div> Adicionei novos elementos de HTML"
+        //Chama e mostra o primeiro <div>
+        console.log(document.getElementById("teste1").innerHTML)
+        //Altera o texto do segundo <div>
+        document.getElementById("teste2").innerHTML="<button>Teste</button>"
+        //Chama e mostra o segundo <div>
+        console.log(document.getElementById("teste2").innerHTML)
+    </script>
+</body>
+</html>
