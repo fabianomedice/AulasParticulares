@@ -35,7 +35,8 @@ int main() {
 	printf("\nUma divisao de %f com %f da:", numerador,denominador); //usando float para as variaveis
 	//printf("\nUma divisao de %lf com %lf da:", numerador,denominador); //usando double para as variaveis
 	
-	printf("\n%i para variavel int (inteiro) com range [-32767 +32767] ou 2 bytes", i_int);
+	printf("\n%i para variavel int (inteiro) com range [-32,767 +32,767] ou 2 bytes", i_int);
+	printf("\n%i para variavel int (inteiro) com range [-2,147,483,648 +2,147,483,647] ou 4 bytes", i_int);
 	printf("\n%f para variavel float (reais ou numero com virgula) com range [3.4*10^-38 3.4*10^38] ou 4 bytes", f_float);
 	printf("\n%lf para variavel double (dobro de precisao do float) com range [1.7*10^-308  1.7*10^308] ou 8 bytes", lf_double);
 	printf("\n");
